@@ -1,17 +1,21 @@
-import "@/styles/globals.css";
 import { Inter } from "next/font/google";
+import "@/styles/index.css";
+import StoreProvider from "@/store/Provider";
+import { Header } from "@/components/Header";
+import { Locale } from "@/i18n/config";
+import { useTranslate } from "@/i18n/useTranslate";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-   title: "Create Next App",
-};
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children, params: { lang } }: { children: React.ReactNode; params: { lang: Locale } }) {
+   const translate = await useTranslate(lang);
    return (
       <html lang="en">
          <body className={inter.className}>
-            <main className="flex-1">{children}</main>
+            <Header translate={translate.header} />
+            <StoreProvider>
+               <main>{children}</main>
+            </StoreProvider>
          </body>
       </html>
    );

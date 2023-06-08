@@ -1,0 +1,14 @@
+* {
+   @apply m-0 p-0 outline-none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   @apply appearance-none;
+}
+html,
+body {
+   @apply h-full;
+}
+body {
+   @apply flex flex-col;
+}

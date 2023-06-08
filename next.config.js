@@ -1,4 +1,12 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+// @ts-check
 
-module.exports = nextConfig
+/**
+ * @type {import('next').NextConfig}
+ **/
+const nextConfig = {
+   experimental: {
+      appDir: true,
+   },
+};
+
+module.exports = nextConfig;

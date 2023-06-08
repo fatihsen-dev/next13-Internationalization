@@ -1,0 +1,14 @@
+{
+   "home": {
+      "page_name": "Ana sayfa"
+   },
+   "header": {
+      "header_text": "Header Yazısı"
+   },
+   "client_side": {
+      "text": "Client Side Deneme Yazısı"
+   },
+   "server_side": {
+      "text": "Server Side Deneme Yazısı"
+   }
+}

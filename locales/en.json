@@ -1,0 +1,14 @@
+{
+   "home": {
+      "page_name": "Home Page"
+   },
+   "header": {
+      "header_text": "Header Text"
+   },
+   "client_side": {
+      "text": "Client Side Test Text"
+   },
+   "server_side": {
+      "text": "Server Side Test Text"
+   }
+}
