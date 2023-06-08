@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-   title: "Server",
+   title: "Server Side",
 };
 
 export default async function Page({ params: { lang } }: { params: { lang: Locale } }) {
